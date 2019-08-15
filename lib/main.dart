@@ -3,7 +3,7 @@ import 'package:flutter_demo/brick_main.dart';
 import 'package:flutter_demo/data_loader_test.dart';
 import 'package:flutter_demo/game_of_thrones.dart';
 
-void main() => runApp(GameOfThronesApp());
+void main() => runApp(BrickApp());
 
 class MainApp extends StatelessWidget {
   // This widget is the root of your application.

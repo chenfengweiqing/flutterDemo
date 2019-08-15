@@ -25,14 +25,39 @@ dependencies:
   cupertino_icons: ^0.1.2
   http: ^0.12.0+2
   json_annotation: ^3.0.0
+  camera:
+  flutter_web: any
+  flutter_web_ui: any
+  rxdart: ^0.19.0
+  event_bus: ^1.1.0
+  provide: ^1.0.0
+  pinch_zoom_image: ^0.1.1
+  cached_network_image: any
+  flutter_cache_manager: any
+  provider: ^3.0.0+1
+  redux: ^3.0.0
+  flutter_redux: ^0.5.2
+  intro_slider: ^1.0.6
+  flutter_spinkit: ^2.1.0
+  url_launcher: ^3.0.3
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   build_runner: ^1.0.0
   json_serializable: ^3.2.0
+  build_web_compilers: any
 
-
+dependency_overrides:
+  flutter_web:
+    git:
+      url: https://github.com/flutter/flutter_web
+      path: packages/flutter_web
+  flutter_web_ui:
+    git:
+      url: https://github.com/flutter/flutter_web
+      path: packages/flutter_web_ui
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -43,6 +68,12 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - assets/
+  fonts:
+    - family: MyFont
+      fonts:
+        - asset: assets/Fonts/sspu.ttf
 
   # To add assets to your application, add an assets section, like this:
   # assets:
