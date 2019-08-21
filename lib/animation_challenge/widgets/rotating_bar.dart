@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
-import 'package:animation_challenge/utils/react_getter.dart';
+import '../utils/react_getter.dart';
 
 typedef TouchCallBack = void Function(double r);
 

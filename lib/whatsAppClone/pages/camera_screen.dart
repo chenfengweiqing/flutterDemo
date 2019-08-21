@@ -18,8 +18,7 @@ class CameraScreenState extends State<CameraScreen> {
   @override
   void initState() {
     super.initState();
-    controller =
-        new CameraController(widget.cameras[0], ResolutionPreset.medium);
+    controller = new CameraController(widget.cameras[0], ResolutionPreset.medium);
     controller.initialize().then((_) {
       if (!mounted) {
         return;
@@ -36,7 +35,7 @@ class CameraScreenState extends State<CameraScreen> {
 
   @override
   Widget build(BuildContext context) {
-    if (!controller.value.initialized) {
+    if (!controller.value.isInitialized) {
       return new Container();
     }
     return new AspectRatio(
