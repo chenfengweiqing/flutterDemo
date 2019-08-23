@@ -3,7 +3,7 @@ import 'package:flutter_demo/brick_main.dart';
 import 'package:flutter_demo/data_loader_test.dart';
 import 'package:flutter_demo/game_of_thrones.dart';
 
-void main() => runApp(BrickApp());
+void main() => runApp(MainApp());
 
 class MainApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -57,6 +57,11 @@ class _MyHomePageState extends State<MyHomePage> {
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
       _counter++;
+      Future.delayed(new Duration(seconds: 2), () {
+        return "hi world!";
+      }).then((data) {
+        print(data);
+      });
     });
   }
 
@@ -101,6 +106,17 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.display1,
             ),
+            FlatButton(
+              child: Text("open new route"),
+              textColor: Colors.blue,
+              onPressed: () {
+                //导航到新路由
+                Navigator.push( context,
+                    MaterialPageRoute(builder: (context) {
+                      return NewRoute();
+                    }));
+              },
+            ),
           ],
         ),
       ),
@@ -109,6 +125,20 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+}
+
+class NewRoute extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("New route"),
+      ),
+      body: Center(
+        child: Text("This is new route"),
+      ),
     );
   }
 }
