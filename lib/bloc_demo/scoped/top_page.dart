@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bloc_demo/scoped/blocs/bloc_provider.dart';
+import 'blocs/bloc_provider.dart';
 import 'under_page.dart';
 
 class TopPage extends StatelessWidget {

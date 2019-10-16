@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bloc_demo/single_global_instance/blocs/count_bloc.dart';
+import 'blocs/count_bloc.dart';
 import 'under_page.dart';
 
 class TopPage extends StatelessWidget {

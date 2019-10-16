@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'swipe_to_dismiss_demo.dart';
+import '../textfields_focus_demo/swipe_to_dismiss_demo.dart';
 
 void main() => runApp(new MyApp());
 

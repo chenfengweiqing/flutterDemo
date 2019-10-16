@@ -152,7 +152,7 @@ class _SliderScreenState extends State<SliderScreen> {
         description:
             "Get Faster Development, Flexible UI & Access Native Features. Learn More! High-Quality Interfaces. Flexible UI. Fast Development.",
         pathImage: "assets/images/flutter.png",
-        backgroundColor: 0xfff5a623,
+        backgroundColor: Color(0xfff5a623),
       ),
     );
     slides.add(
@@ -161,16 +161,15 @@ class _SliderScreenState extends State<SliderScreen> {
         description:
             "Developers at Google and elsewhere use Dart to create high-quality, mission-critical apps for iOS, Android, and the web. With features aimed at client-side development, Dart is a great fit for both mobile and web apps.",
         pathImage: "assets/images/dart.png",
-        backgroundColor: 0xff203152,
+        backgroundColor: Color(0xff203152),
       ),
     );
     slides.add(
       new Slide(
         title: "WELECOME",
-        description:
-            "开始你的app",
+        description: "开始你的app",
         pathImage: "assets/images/flutterlogo.png",
-        backgroundColor: 0xff9932CC,
+        backgroundColor: Color(0xff9932CC),
       ),
     );
   }

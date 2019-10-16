@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:bloc_demo/scoped/blocs/count_bloc.dart';
+
+import '../../single_global_instance/blocs/count_bloc.dart';
 
 class BlocProvider extends InheritedWidget {
   CountBLoC bLoC = CountBLoC();

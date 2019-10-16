@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sliver_demo/sliver_demo.dart';
+
+import 'sliver_demo.dart';
 
 void main() => runApp(new MyApp());
 

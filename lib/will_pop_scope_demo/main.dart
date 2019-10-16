@@ -5,8 +5,8 @@
  */
 import 'package:flutter/material.dart';
 
-import 'package:will_pop_scope_demo/will_pop_scpoe_demo.dart';
-//import 'package:will_pop_scope_demo/form_pop_demo.dart';
+import 'will_pop_scpoe_demo.dart';
+//import 'form_pop_demo.dart';
 
 void main() => runApp(new MyApp());
 
@@ -19,9 +19,7 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
-
-
